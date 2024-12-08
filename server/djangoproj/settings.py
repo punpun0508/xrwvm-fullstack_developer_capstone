@@ -28,8 +28,10 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'http://locahost:8000']
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000']
+ALLOWED_HOSTS = ['localhost', 'http://localhost', 'http://locahost:8000',
+                 '14.187.196.37', 'http://14.187.196.37']
+CSRF_TRUSTED_ORIGINS = ['http://localhost', 'http://localhost:8000',
+                        'http://14.187.196.37']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
