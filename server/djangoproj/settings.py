@@ -29,9 +29,12 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'http://localhost', 'http://locahost:8000',
-                 '14.187.196.37', 'http://14.187.196.37']
+                 '14.187.196.37', 'http://14.187.196.37',
+                 'https://26a2-14-187-196-37.ngrok-free.app',
+                 '26a2-14-187-196-37.ngrok-free.app']
 CSRF_TRUSTED_ORIGINS = ['http://localhost', 'http://localhost:8000',
-                        'http://14.187.196.37']
+                        'http://14.187.196.37',
+                        'https://26a2-14-187-196-37.ngrok-free.app']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
